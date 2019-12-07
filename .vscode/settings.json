@@ -1,0 +1,4 @@
+{
+    "editor.fontFamily": "MonoSpace",
+    "terminal.integrated.shell.linux": "/usr/bin/zsh"
+}
