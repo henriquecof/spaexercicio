@@ -1,13 +1,13 @@
-import React, { Component } from 'react';
+/* eslint-disable no-unused-expressions */
+import React from 'react';
 import { Navbar, NavItem, Row } from 'react-materialize';
 
-// import { Container } from './styles';
-
-const Header = () => {
+const Header = () => (
   <Row>
-    <Navbar className="grey darken-2">
+    <Navbar className="grey darken">
       <NavItem href="/">Home</NavItem>
       <NavItem href="/">Contact</NavItem>
     </Navbar>
-  </Row>;
-};
+  </Row>
+);
+export default Header;
