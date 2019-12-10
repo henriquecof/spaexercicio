@@ -1,14 +1,16 @@
-// Importando o React
 import React from 'react';
-// Importando o component Home
-import Home from './components/home/home';
-// Importando os components necessários da lib react-materialize
 import { Container } from 'react-materialize';
+import { Switch, Route } from 'react-router-dom';
+import Home from './components/home/home';
+import Contato from './components/contact/contato';
 
 const Main = () => (
   <main>
     <Container>
-      <Home />
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route exact path="/contato" component={Contato} />
+      </Switch>
     </Container>
   </main>
 );
